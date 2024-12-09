@@ -1,0 +1,138 @@
+.hero {
+  max-width: 1500px;
+  height: 680px;
+  background-image: url('../../assets//images/hero_bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  margin-top: 130px;
+  .container {
+    max-width: 1170px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .main_collection {
+      width: 100%;
+      height: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 150px 10px 10px 150px;
+      .hero_left {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        h2 {
+          max-width: 530px;
+          font-size: 72px;
+          font-weight: 400;
+          line-height: 93.6px;
+          color: #ffffff;
+        }
+        p {
+          max-width: 530px;
+          font-size: 20px;
+          font-weight: 500;
+          line-height: 36px;
+          color: #ffffffcc;
+        }
+        button {
+          width: 202px;
+          height: 70px;
+          padding: 24px;
+          font-size: 18px;
+          color: #ffffff;
+          background: #c99e71;
+          border-radius: 10px;
+          border: 1px solid transparent;
+          transition: 0.5s;
+          margin-top: 32px;
+          cursor: pointer;
+          &:hover {
+            background: none;
+            color: #c99e71;
+            border: 1px solid #c99e71;
+            transition: 0.5s;
+          }
+        }
+      }
+      .play {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 260px;
+        gap: 20px;
+        .play_icon {
+          font-size: 80px;
+          color: white;
+        }
+        span {
+          font-size: 18px;
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .hero {
+    .container {
+      .main_collection {
+        padding: 50px 20px;
+      }
+    }
+  }
+}
+@media (max-width: 1000px) {
+  .hero {
+    .container {
+      .main_collection {
+        .hero_left {
+          h2 {
+            font-size: 30px;
+            line-height: normal;
+            transition: 0.5s;
+          }
+          p {
+            font-size: 16px;
+            line-height: 25px;
+            transition: 0.5s;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 670px) {
+  .hero {
+    object-fit: contain;
+    .container {
+      .main_collection {
+        padding: 50px 20px;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column-reverse;
+        gap: 30px;
+        .play {
+          margin-top: 20px;
+          font-size: 14px;
+        }
+        .hero_left {
+          align-items: center;
+          justify-content: center;
+          gap: 20px;
+          p {
+            text-align: center;
+            font-size: 14px;
+          }
+          h2 {
+            text-align: center;
+            font-size: 24px;
+          }
+        }
+      }
+    }
+  }
+}
