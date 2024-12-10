@@ -5,7 +5,7 @@ import { FiShoppingBag } from 'react-icons/fi'
 import { IoMenu } from 'react-icons/io5'
 import { IoArrowUpCircle } from 'react-icons/io5'
 import logo from '../../assets/images/Logo.svg'
-import { NavLink } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 export default class Header extends Component {
   constructor (props) {
     super(props)
@@ -49,16 +49,18 @@ export default class Header extends Component {
               </NavLink>
             </ul>
           </nav>
-          <a href='#'>
+          <Link to='/'>
             <img className='logo' src={logo} alt='img' />
-          </a>
+          </Link>
           <nav className='navbar_left'>
             <ul>
-              <NavLink to={"/cofe"} className='navbar_list'>Coffe</NavLink>
+              <NavLink to={'/cofee'} className='navbar_list'>
+                Coffe
+              </NavLink>
               <NavLink to={'/product'} className='navbar_list'>
                 Shop
               </NavLink>
-              <li className='navbar_list'>Contact</li>
+              <NavLink to={"/contact"} className='navbar_list'>Contact</NavLink>
               <CiSearch className='nav_icons' />
               <FiShoppingBag className='nav_icons' />
             </ul>

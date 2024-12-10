@@ -1,0 +1,105 @@
+section {
+  padding: 0px 20px;
+  .machine {
+    max-width: 1170px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 150px;
+    padding: 85px 50px 85px 150px;
+    background: #1c1814;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    .machine_img {
+      height: 100%;
+      max-width: 226px;
+    }
+    .machine_right {
+      display: flex;
+      flex-direction: column;
+      gap: 36px;
+      .machine_title {
+        font-size: 48px;
+        font-weight: 400;
+        line-height: 62.4px;
+        color: #ffffff;
+        max-width: 500px;
+      }
+      .machine_desc {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 28.8px;
+        color: #ffffffcc;
+        max-width: 555px;
+        text-transform: capitalize;
+      }
+      .machine_btn {
+        width: 215px;
+        height: 62px;
+        padding: 20px;
+        background: #c99e71;
+        color: #ffffff;
+        font-size: 18px;
+        border-radius: 10px;
+        border: 1px solid transparent;
+        cursor: pointer;
+        transition: 0.5s;
+        &:hover {
+          background: none;
+          color: #c99e71;
+          border: 1px solid #c99e71;
+          transition: 0.5s;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1100px) {
+  section {
+    .machine {
+      padding: 50px;
+    }
+  }
+}
+@media (max-width: 905px) {
+  section {
+    .machine {
+      padding: 50px 20px;
+      flex-direction: column;
+      .machine_img {
+        width: 100%;
+        height: 100%;
+      }
+      .machine_right {
+        align-items: center;
+        .machine_title {
+          font-size: 33px;
+          text-align: center;
+          line-height: 40px;
+        }
+        .machine_desc {
+          text-align: center;
+          line-height: 30px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 500px) {
+    section {
+      .machine {
+        .machine_right {
+          .machine_title {
+            font-size: 20px;
+          }
+          .machine_desc {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+  
