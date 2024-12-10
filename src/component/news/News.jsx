@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import './News.scss'
-import new1 from '../../assets/images/New1.png'
-import new2 from '../../assets/images/New2.png'
-import new3 from '../../assets/images/New3.png'
+import new1 from '../../assets/images/new1.png'
+import new2 from '../../assets/images/new2.png'
+import new3 from '../../assets/images/new3.png'
 import { FaArrowRightLong } from 'react-icons/fa6'
 export default class News extends Component {
   render () {
