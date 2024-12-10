@@ -1,11 +1,11 @@
-import React from 'react'
+import React, { Component } from 'react'
 import History from '../../component/history/History'
-const Historiya = () => {
-  return (
-    <div>
-      <History />
-    </div>
-  )
+export default class Historiya extends Component {
+  render () {
+    return (
+      <div>
+        <History />
+      </div>
+    )
+  }
 }
-
-export default Historiya

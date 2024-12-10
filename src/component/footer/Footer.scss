@@ -19,7 +19,7 @@ footer {
       align-items: center;
       justify-content: center;
       gap: 40px;
-      li {
+      .footer_list {
         font-size: 20px;
         font-weight: 500;
         line-height: 20px;
@@ -51,6 +51,7 @@ footer {
         padding: 5px 10px;
         font-size: 16px;
         border: transparent;
+        outline: none;
       }
       .footer_icon {
         font-size: 40px;
@@ -71,7 +72,7 @@ footer {
       gap: 20px;
       .footer_navbar {
         gap: 20px;
-        li {
+        .footer_list {
           font-size: 16px;
         }
       }

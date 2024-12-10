@@ -1,11 +1,11 @@
-import React from 'react'
-import Contact from "../../component/contact/Contact"
-const Aloqa = () => {
-  return (
-    <div>
-        <Contact/>
-    </div>
-  )
+import React, { Component } from 'react'
+import Contact from '../../component/contact/Contact'
+export default class Aloqa extends Component {
+  render () {
+    return (
+      <div>
+        <Contact />
+      </div>
+    )
+  }
 }
-
-export default Aloqa

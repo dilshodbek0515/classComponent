@@ -1,11 +1,11 @@
-import React from 'react'
+import React, { Component } from 'react'
 import Menu from '../../component/menu/Menu'
-const Menyu = () => {
-  return (
-    <div>
-      <Menu />
-    </div>
-  )
+export default class Menyu extends Component {
+  render () {
+    return (
+      <div>
+        <Menu />
+      </div>
+    )
+  }
 }
-
-export default Menyu

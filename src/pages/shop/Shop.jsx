@@ -1,11 +1,12 @@
-import React from 'react'
-import Product from "../../component/product/Product"
-const Shop = () => {
-  return (
-    <div>
-      <Product/>
-    </div>
-  )
-}
+import React, { Component } from 'react'
+import Product from '../../component/product/Product'
 
-export default Shop
+export default class Shop extends Component {
+  render () {
+    return (
+      <div>
+        <Product />
+      </div>
+    )
+  }
+}

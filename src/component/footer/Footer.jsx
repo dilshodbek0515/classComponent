@@ -2,22 +2,37 @@ import React, { Component } from 'react'
 import './Footer.scss'
 import { PiArrowCircleRightFill } from 'react-icons/pi'
 import footer_logo from '../../assets/images/Logo.svg'
+import { NavLink } from 'react-router-dom'
 export default class Footer extends Component {
   render () {
     return (
       <footer>
         <div className='footer_container'>
-          <a href=''>
+          <NavLink to={'/'}>
             <img className='footer_logo' src={footer_logo} alt='' />
-          </a>
+          </NavLink>
           <nav className='footer_navbar'>
-            <li>Home</li>
-            <li>Rerervation</li>
-            <li>Menu</li>
-            <li>About</li>
-            <li>Pages</li>
-            <li>Shop</li>
-            <li>Blogs</li>
+            <NavLink className='footer_list' to={'/'}>
+              Home
+            </NavLink>
+            <NavLink className='footer_list' to={'/history'}>
+              History
+            </NavLink>
+            <NavLink className='footer_list' to={'/menyu'}>
+              Menu
+            </NavLink>
+            <NavLink className='footer_list' to={'/about'}>
+              About
+            </NavLink>
+            <NavLink className='footer_list' to={'/cofee'}>
+              Coffe
+            </NavLink>
+            <NavLink className='footer_list' to={'/product'}>
+              Shop
+            </NavLink>
+            <NavLink className='footer_list' to={'/contact'}>
+              Contact
+            </NavLink>
           </nav>
           <form action='' className='footer_forma'>
             <input type='email' placeholder='Enter your email' />
