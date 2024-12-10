@@ -22,7 +22,7 @@
         align-items: center;
         justify-content: center;
         gap: 48px;
-        li {
+        .navbar_list {
           list-style: none;
           font-size: 18px;
           font-weight: 700;
@@ -65,7 +65,7 @@
       .navbar_left {
         ul {
           gap: 20px;
-          li {
+          .navbar_list {
             font-size: 16px;
           }
           .nav_icons {

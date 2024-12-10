@@ -5,6 +5,7 @@ import { FiShoppingBag } from 'react-icons/fi'
 import { IoMenu } from 'react-icons/io5'
 import { IoArrowUpCircle } from 'react-icons/io5'
 import logo from '../../assets/images/Logo.svg'
+import { NavLink } from 'react-router-dom'
 export default class Header extends Component {
   constructor (props) {
     super(props)
@@ -34,10 +35,18 @@ export default class Header extends Component {
         <header>
           <nav className='navbar_left'>
             <ul>
-              <li>Home</li>
-              <li>About</li>
-              <li>Menu</li>
-              <li>Reservation</li>
+              <NavLink className='navbar_list' to={'/'}>
+                Home
+              </NavLink>
+              <NavLink className='navbar_list' to={'/about'}>
+                About
+              </NavLink>
+              <NavLink to={'/menyu'} className='navbar_list'>
+                Menu
+              </NavLink>
+              <NavLink to={'/history'} className='navbar_list'>
+                History
+              </NavLink>
             </ul>
           </nav>
           <a href='#'>
@@ -45,9 +54,11 @@ export default class Header extends Component {
           </a>
           <nav className='navbar_left'>
             <ul>
-              <li>Pages</li>
-              <li>Shop</li>
-              <li>Contact</li>
+              <NavLink to={"/cofe"} className='navbar_list'>Coffe</NavLink>
+              <NavLink to={'/product'} className='navbar_list'>
+                Shop
+              </NavLink>
+              <li className='navbar_list'>Contact</li>
               <CiSearch className='nav_icons' />
               <FiShoppingBag className='nav_icons' />
             </ul>
