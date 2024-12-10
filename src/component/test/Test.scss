@@ -1,5 +1,131 @@
-.test{
-    color: white;
-    font-size: 30px;
-    margin-top: 150px;
+.test {
+  max-width: 1170px;
+  height: auto;
+  margin: 0 auto;
+  padding: 0px 20px;
+  margin-top: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  p {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 21.6px;
+    color: #c99e71;
+  }
+  h2 {
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 62.4px;
+    color: #ffffff;
+    margin-bottom: 50px;
+  }
+  .test_wrapper {
+    width: 100%;
+    height: auto;
+    display: flex;
+    gap: 30px;
+    overflow: auto;
+    .test_cards {
+      max-width: 540px;
+      min-width: 540px;
+      height: 305px;
+      background-color: #1c1814;
+      border-radius: 10px;
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+      .card_coll {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 24px;
+        img {
+          max-width: 129px;
+          height: 149px;
+          border-radius: 5px;
+        }
+        p {
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 28px;
+          color: #ffffffcc;
+          text-transform: capitalize;
+        }
+        .card_name {
+          p,
+          span {
+            display: flex;
+            flex-direction: column;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 28px;
+            color: #ffffffcc;
+            text-transform: capitalize;
+          }
+          span {
+            font-size: 12px;
+            color: #ffffff80;
+          }
+        }
+        .star_content {
+          display: flex;
+          gap: 5px;
+          align-items: center;
+          .star {
+            font-size: 22px;
+            color: #faa61a;
+          }
+        }
+      }
+    }
+  }
+  .test_wrapper::-webkit-scrollbar {
+    height: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .test {
+    .test_wrapper {
+      .test_cards {
+        min-width: 400px;
+        height: auto;
+        .card_coll {
+          img {
+            width: 70px;
+            height: 80px;
+          }
+          p {
+            font-size: 12px;
+            line-height: 22px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .test {
+    .test_wrapper {
+      .test_cards {
+        max-width: 250px;
+        min-width: 250px;
+        .card_coll {
+          flex-direction: column;
+          img {
+            width: 100px;
+            height: 100px;
+          }
+          p {
+            display: none;
+          }
+        }
+      }
+    }
+  }
 }
