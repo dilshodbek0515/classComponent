@@ -9,6 +9,9 @@ import Machine from '../../component/machine/Machine'
 import Contact from '../../component/contact/Contact'
 import News from '../../component/news/News'
 export default class Home extends Component {
+  componentDidMount () {
+    window.scrollTo(0, 0)
+  }
   render () {
     return (
       <div>
