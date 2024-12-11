@@ -75,6 +75,11 @@
         }
       }
     }
+    a {
+      .top {
+        left: 94%;
+      }
+    }
   }
 }
 
@@ -83,6 +88,11 @@
     header {
       .logo {
         max-width: 50px;
+      }
+    }
+    a {
+      .top {
+        left: 92%;
       }
     }
   }
@@ -98,6 +108,20 @@
       }
       .sidebar {
         display: block;
+      }
+    }
+    a {
+      .top {
+        left: 90%;
+      }
+    }
+  }
+}
+@media (max-width: 500px) {
+  .header_collection {
+    a {
+      .top {
+        left: 86%;
       }
     }
   }
